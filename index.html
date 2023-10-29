@@ -58,7 +58,23 @@
        url('fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 
-       .rotate-text {
+
+  }
+
+
+
+@keyframes ticker {
+  0%  { bottom: 0; }
+  10% { bottom: 0; }
+  20% { bottom: 1.2em; }
+  30% { bottom: 1.2em; }
+  40% { bottom: 2.4em; }
+  50% { bottom: 2.4em; }
+  60% { bottom: 3.6em; }
+  70% { bottom: 3.6em; }
+}
+
+.rotate-text {
   
   font: normal 2.5em/1.2 sans-serif;
   color: #A4BB28;
@@ -85,22 +101,6 @@
       animation-iteration-count: infinite;
       animation-delay: 4s;
     }
-  }
-  
-}
-
-@keyframes ticker {
-  0%  { bottom: 0; }
-  10% { bottom: 0; }
-  20% { bottom: 1.2em; }
-  30% { bottom: 1.2em; }
-  40% { bottom: 2.4em; }
-  50% { bottom: 2.4em; }
-  60% { bottom: 3.6em; }
-  70% { bottom: 3.6em; }
-}
-
-}
 
 </style>
 
@@ -154,7 +154,7 @@
     </div>
     <div class="col-12 col-xl-8">
       <p class="lead text-secondary">As a Serivce of op locatie, Marosy biedt complete digitale oplossingen. </p>
-      <p class="lead text-secondary"><span>Everything we love about</span>
+      <p class="lead text-secondary rotate-text"><span>Everything we love about</span>
         <span>
           Portland<br>
           Seattle<br>
